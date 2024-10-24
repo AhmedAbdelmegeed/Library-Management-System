@@ -11,7 +11,7 @@ import {
 const router = express.Router();
 
 // Add a new book
-router.post('/', addBook);
+router.post('/addbook', addBook);
 
 // Update a book’s details
 router.put('/:id', updateBook);
@@ -20,7 +20,7 @@ router.put('/:id', updateBook);
 router.delete('/:id', deleteBook);
 
 // List all books
-router.get('/', listAllBooks);
+router.get('/books', listAllBooks);
 
 // Search books by title, author, or ISBN
 router.get('/search', searchBooks);
